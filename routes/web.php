@@ -13,6 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','UrlController@links');
 Route::fallback('UrlController@url');
-Route::get('not-found', 'UrlController@notFound')->name('not-found');
