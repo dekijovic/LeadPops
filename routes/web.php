@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','UrlController@links');
+Route::fallback('UrlController@url');
+Route::get('not-found', 'UrlController@notFound')->name('not-found');
